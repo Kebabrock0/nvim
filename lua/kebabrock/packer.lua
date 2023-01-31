@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
   
   use('Rigellute/shades-of-purple.vim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('nvim-treesitter/playground') 
+  use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
@@ -43,16 +43,6 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use {
-      'phaazon/hop.nvim',
-      branch = 'v2', -- optional but strongly recommended
-      config = function()
-          -- you can configure Hop the way you like here; see :h hop-config
-          require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
-      end
-  }
-
-
  use ("lukas-reineke/indent-blankline.nvim")
 
   use {
@@ -60,14 +50,23 @@ return require('packer').startup(function(use)
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   } 
 
+
   use {
-      'phaazon/hop.nvim',
-      branch = 'v2', -- optional but strongly recommended
+      "folke/zen-mode.nvim",
       config = function()
-          -- you can configure Hop the way you like here; see :h hop-config
-          require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+          require("zen-mode").setup {
+              -- your configuration comes here
+              -- or leave it empty to use the default settings
+              -- refer to the configuration section below
+          }
       end
   }
-
-
+  use('p00f/nvim-ts-rainbow')
+  use('andweeb/presence.nvim')
+  use { 'michaelb/sniprun', run = 'bash ./install.sh'}
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
+  use ('ggandor/lightspeed.nvim')
   end)
