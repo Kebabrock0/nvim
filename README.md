@@ -1,3 +1,3 @@
 # My nvim config
 
-## Thanks for @ThePrimeagen 
+## Thanks for [@ThePrimeagen ](https://github.com/ThePrimeagen)
