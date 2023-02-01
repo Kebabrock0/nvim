@@ -43,7 +43,6 @@ return require('packer').startup(function(use)
 	  }
   }
 
- use ("lukas-reineke/indent-blankline.nvim")
 
   use {
       'nvim-lualine/lualine.nvim',
@@ -63,10 +62,6 @@ return require('packer').startup(function(use)
   }
   use('p00f/nvim-ts-rainbow')
   use('andweeb/presence.nvim')
-  use { 'michaelb/sniprun', run = 'bash ./install.sh'}
-  use {
-      "windwp/nvim-autopairs",
-      config = function() require("nvim-autopairs").setup {} end
-  }
+ 
   use ('ggandor/lightspeed.nvim')
   end)

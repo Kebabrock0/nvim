@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\muham\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\muham\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
   ["lightspeed.nvim"] = {
     loaded = true,
     path = "C:\\Users\\muham\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightspeed.nvim",
@@ -200,11 +195,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\muham\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\shades-of-purple.vim",
     url = "https://github.com/Rigellute/shades-of-purple.vim"
-  },
-  sniprun = {
-    loaded = true,
-    path = "C:\\Users\\muham\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\sniprun",
-    url = "https://github.com/michaelb/sniprun"
   },
   ["telescope.nvim"] = {
     loaded = true,
