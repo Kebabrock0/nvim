@@ -64,4 +64,39 @@ return require('packer').startup(function(use)
   use('andweeb/presence.nvim')
  
   use ('ggandor/lightspeed.nvim')
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
+  use ("rafamadriz/friendly-snippets")
+  use({
+      "L3MON4D3/LuaSnip",
+      -- follow latest release.
+      tag = "v<CurrentMajor>.*",
+      -- install jsregexp (optional!:).
+      run = "make install_jsregexp"
+  })
+  use {
+      "NvChad/nvterm",
+      config = function ()
+          require("nvterm").setup()
+      end,
+  }
+  use ('hrsh7th/vim-vsnip')
+  use ('hrsh7th/vim-vsnip-integ')
+  use ('folke/tokyonight.nvim')
+  use ('yashguptaz/calvera-dark.nvim')
+  use {
+      "folke/trouble.nvim",
+      requires = "nvim-tree/nvim-web-devicons",
+      config = function()
+          require("trouble").setup {
+              -- your configuration comes here
+              -- or leave it empty to use the default settings
+              -- refer to the configuration section below
+          }
+      end
+  }
+  use ('nvim-tree/nvim-web-devicons')
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   end)
